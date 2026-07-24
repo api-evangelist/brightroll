@@ -1,7 +1,28 @@
 aid: brightroll
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/brightroll.png
 name: BrightRoll
-description: BrightRoll is a company surfaced as a portfolio company of uncork-capital and added to the
-  API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  BrightRoll was a programmatic video advertising platform founded in 2006 in San Francisco that ran
+  one of the largest independent real-time bidding marketplaces for digital video ads (RTB/DSP/SSP),
+  connecting brand advertisers and agencies with publisher video inventory across web, mobile, and
+  connected devices. The company was acquired by Yahoo in November 2014 and its technology was folded
+  into Yahoo's advertising stack, later branded under Oath / Verizon Media and now Yahoo Advertising.
+  BrightRoll no longer operates as an independent provider and publishes no standalone developer
+  program or public API. As of this enrichment pass its former domain, brightroll.com, returns an
+  HTTP 301 redirect to Yahoo's advertising platforms page, and the domain is served from Yahoo-owned
+  DNS and mail infrastructure. This profile is retained in the API Evangelist network as an acquired /
+  absorbed company record rather than an active API producer.
 url: https://raw.githubusercontent.com/api-evangelist/brightroll/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,14 +30,30 @@ x-backed-by:
 - uncork-capital
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: acquired
+x-acquired-by: yahoo
+x-acquired-year: 2014
+x-redirects-to: https://www.oath.com/advertising/platforms
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- Advertising
+- AdTech
+- Video Advertising
+- Programmatic Advertising
+- Real-Time Bidding
+- Demand-Side Platform
+- Acquired
 apis: []
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
